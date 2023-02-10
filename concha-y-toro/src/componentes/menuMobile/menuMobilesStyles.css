@@ -1,0 +1,445 @@
+
+.menus{
+    font-weight: 500;
+    font-size: 34px;
+    color:#BCBCBC;
+    transition: all 480ms ease-in-out;
+}
+@media all and (max-width:1300px){
+    .menus{ 
+        font-size: 20px;
+    }
+
+}
+
+.chakra-modal__header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+    padding-right: 30px;
+}
+.containLenguaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cerrarMenu{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+.cerrarMenu:hover{
+   opacity: 0.8;
+   transition: all 1s ease;
+   transform: scale(1.1) rotate(90deg);
+}
+
+.css-7roig{
+    background:#9B9A9A !important;
+}
+.lenguaje{
+    color:  #060606;
+    font-weight: 500;
+    font-size: 14px;
+    margin-right:6px;
+    margin-left:6px;
+}
+.logo{
+    cursor: pointer;
+}
+.logo:hover{
+    opacity: 0.8;
+}
+.containMenu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 90000;
+    height: 100px !important;
+}
+.containLenguajeF{
+    width: 100%;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-bottom: 10px;
+}
+.chakra-modal__content-container{
+    z-index: 80000;
+}
+.chakra-portal{
+    z-index: 80000;
+}
+.chakra-portal div{
+    z-index: 80000;
+}
+
+.chakra-modal__content-container{
+    z-index: 80000;
+}
+.deslizante{
+    z-index: 80000;
+    
+
+}
+.containMenu a:hover{
+    transform: translateY(-3px);
+    transition: all 0.7s ease;
+    opacity: 0.8;
+    
+}
+
+.containMenu a{
+    margin-bottom: 10px;
+}
+
+ .containMenu a:hover .menus{
+    color: black !important;
+    transition: all 480ms ease-in-out;
+
+ } 
+    
+
+.menuNav{
+    position: fixed;
+    width: 23px;
+    height: 14px; 
+    right: 30px;  
+    top: 16px;  
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+}
+.contenedorImagen{
+    position: absolute;
+    width: 0px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    left: 0px;
+    top:0px;
+    z-index: 29;
+}
+.contenedorImagen img{
+    z-index: 25;
+
+}
+.tituloPrincipal{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 100px;
+}
+.tituloPrincipal55{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 28px;
+    color: white;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 16px;
+    text-align: center;
+}
+
+.viña{
+    left: 230px;
+    top:20px;
+    width:264px;
+    height: 43px;
+    position: absolute;
+    z-index:22;
+}
+
+.botonPrincipal{
+    width: 244px;
+    height: 56px;
+    background: #FFFFFF;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s ease all;
+    position: relative;
+    overflow: hidden;
+  
+}
+.botonPrincipalEfect34{
+    width: 134px;
+    height: 46px;
+}
+.botonPrincipal span{
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 17px;
+    position: relative;
+    transition: all 0.1s ease;
+    z-index: 2;
+}
+.botonPrincipal.botonPrincipalEfect::after{
+    content: "";
+    width:100%;
+    height: 100%;
+    background: #FF5B35;
+    border-radius: 28px;
+    z-index: 1;
+    position: absolute;
+    top:-70px;
+    left:0px;
+    transition: all 0.3s ease-in-out;
+ }
+ .botonPrincipal.botonPrincipalEfect:hover::after{
+    top:0px;
+ }
+ .botonPrincipal.botonPrincipalEfect:hover.botonPrincipal{
+   color:white;
+ }
+.menuNav:hover{
+    transform: rotate(180deg);  
+    transition: all 0.5s ease;
+}
+.login{
+    position: fixed;
+    left: 20px;
+    width:134px;
+    height: 43px;
+    top: 10px;  
+    cursor: pointer;
+    margin: 0px;
+    padding: 0px;
+    z-index: 255;
+}
+.login img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.headerDrawer{
+    z-index: 30;
+}
+.headerRo{
+    position: fixed;
+    top:0px;
+    width: 100vw;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0.09);
+    backdrop-filter: blur(1px);
+    z-index: 1000;
+    display: none;
+}
+
+
+.boton22{
+ background-color: #F5F5F5 ;
+ text-align: center;
+ box-shadow: 0px 13px 35px -14px rgba(255, 77, 0, 0.25) ;
+ margin-top: 50px;  
+}
+.lenguajeDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.lenguajeDisplay p{
+    font-family: 'Poppins',sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #CDCDCD;
+    cursor: pointer;
+}
+.colorLenguaje{
+    color: #FFAD99 !important;
+    text-decoration-line: underline;
+}
+
+@media all and (max-width:1300px){
+    .tituloPrincipal{
+                font-size: 36px;
+                padding: 10px;
+                margin-bottom: 20px;
+    }
+    .contenedorImagen{
+        justify-content: end;
+        padding-bottom: 200px;
+    }
+    .viña{
+        left: calc(50% - 65px);
+        width:224px;
+        height: 36px; 
+        top:10px;
+        z-index: 2000;
+     }
+     .login{
+        left: 20px;
+        width:46px;
+        height: 36px;
+        top:5px;
+        z-index: 2000;
+    }
+    .headerRo{
+        display: block;
+    }
+    .menuNav{
+        z-index: 2000;
+
+    }
+    .boton22{
+        margin-top: 10px;  
+       }
+}
+
+.foot{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 100px;
+ 
+}
+.foot1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 60px;
+}
+.foot2{
+    display: flex;
+    margin-bottom: 50px;
+    justify-content: space-around;
+    align-items: center;
+}
+.foot2 div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.foot2 div a{
+    margin-bottom: 20px;
+
+}
+.foot2 div a:hover{
+    opacity: 0.8;
+}
+.foot3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    background-color: #060606;
+}
+.foot3 p{
+    font-family: 'Noto Sans',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    color: white;
+    margin-right: 50px;
+}
+.footIma img{
+    width:190px;
+    height:64px
+}
+.negroEfect{
+    background-color: #060606 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border: 2px solid white !important;
+}
+.negroEfect span{
+    color: white !important;
+    margin: 0px !important;
+    padding: 0px !important;
+}
+.negroEfect::after{
+    background-color: #FF5B35 !important;
+    margin: 0px !important;
+    padding: 0px !important;
+    border-radius: 30px  !important;
+}
+
+
+.footMobi{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    margin-top: 100px;
+    display: none;
+}
+.foot1Mob{
+    flex-direction: column;
+}
+.foot1Mob a{
+    margin-bottom: 15px !important;
+
+}
+.foot3Mobi{
+    height: 55px !important;
+}
+.foot2Mob{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left:0px ;
+    text-decoration: underline;
+}
+.foot2Mob a{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+@media all and (max-width:950px){
+    .foot{
+        display: none;
+    }
+    .footMobi{
+        display: block;
+    }
+}
+
+.login{
+    top:25px;
+}
+.viña{
+    top:35px !important;
+}
+.menuNav{
+    top:25px;
+}
+@media all and (max-width:950px){
+    .viña{
+        top:30px !important;
+        width: 150px !important;
+    }
+    .login{
+        width: 36px;
+        height: 28px;
+    }
+}
+@media all and (max-width:1300px){
+    .tituloPrincipal55
+    {font-size: 18px;}
+    .contenedorImagen{
+        z-index: 1021 !important;
+    }
+    .contenedorImagen img{
+        z-index: 1025 !important;
+    }
+}
+
+.viña{
+    transform: none !important;
+}

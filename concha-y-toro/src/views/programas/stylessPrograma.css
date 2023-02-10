@@ -1,0 +1,110 @@
+.pantallaInicialPrograma{
+    background-image: none !important;
+    background-color: white;
+    margin-bottom: 0px !important;
+}
+.tituloInicioPrograma{
+    font-weight: 500;
+    font-size: 58px;
+    text-align: center;
+}
+.programa1{
+    background-image: url('./../../assets/programaImage1.jpg');
+    background-attachment: scroll;
+    position: relative;
+ }
+ 
+ .programa2{
+    background-image: url('./../../assets/programaImage2.jpg');
+    position: relative;
+
+ }
+ .programa3{
+    background-image: url('./../../assets/programaImage3.jpg');
+    position: relative;
+
+
+ }
+ .programa4{
+    background-image: url('./../../assets/programaImage4.jpg');
+    position: relative;
+
+ }
+ .programa5{
+    background-image: url('./../../assets/programaImage5.jpg');
+    position: relative;
+
+ }
+ .programaSvg1{
+    width: 82px;
+    height: 82px;
+    position: absolute;
+    left: 100px;
+    top:150px;    
+    z-index: 1;
+ }
+ .text{
+    position: relative;
+ }
+ .programa1Mobile{
+    display: none;
+ }
+ @media all and (max-width:1500px) {
+    .programaSvg1{
+             left: 10px;
+     }
+ }
+ @media all and (max-width:1300px) {
+    .programaSvg1{
+            display: none;
+     }
+ }
+ @media all and (max-width:1400px) {
+    .programaSvg11{
+       width: 82px;
+       height: 82px;
+       position: absolute;
+       top:30px ;
+       right: 0px;
+       z-index: 1;
+    }
+}
+ @media all and (max-width:900px) {
+    .programa1Mobile{
+        background-image: url('./../../assets/programaImage1.jpg');
+        background-attachment: scroll;
+        position: relative;
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: 50px;
+        display: block;
+     }
+     .programa2Mobile{
+        background-image: url('./../../assets/programaImage2.jpg') !important;
+     }
+     .programa3Mobile{
+        background-image: url('./../../assets/programaImage3.jpg') !important;
+     }
+     .programa4Mobile{
+        background-image: url('./../../assets/programaImage4.jpg') !important;
+     }
+     .programa5Mobile{
+        background-image: url('./../../assets/programaImage5.jpg') !important;
+     }
+     .containerTextos{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+     }
+     .programaSvg11{
+        width: 82px;
+        height: 82px;
+        position: absolute;
+        left: calc(50% - 40px);
+        top:460px !important;
+        z-index: 1;
+     }
+ }
+
+

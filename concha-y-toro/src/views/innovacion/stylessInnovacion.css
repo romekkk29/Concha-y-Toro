@@ -1,0 +1,53 @@
+.innovacion1{
+    background-image: url('./../../assets/innovacionImagen1.jpg');
+    background-attachment: scroll;
+    position: relative;
+ }
+ 
+ .innovacion2{
+    background-image: url('./../../assets/innovacionImagen2.jpg');
+    position: relative;
+
+ }
+ .innovacion3{
+    background-image: url('./../../assets/innovacionImagen3.jpg');
+    position: relative;
+
+
+ }
+ .innovacion4{
+    background-image: url('./../../assets/innovacionImagen4.jpg');
+    position: relative;
+
+ }
+ .innovacion5{
+    background-image: url('./../../assets/innovacionImagen5.jpg');
+    position: relative;
+
+ }
+ .innovacion1Mobile{
+    display: none;
+ }
+ @media all and (max-width:900px) {
+    .innovacion1Mobile{
+        background-image: url('./../../assets/innovacionImagen1.jpg');
+        background-attachment: scroll;
+        position: relative;
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: 50px;
+        display: block;
+     }
+     .innovacion2Mobile{
+        background-image: url('./../../assets/innovacionImagen2.jpg') !important;
+     }
+     .innovacion3Mobile{
+        background-image: url('./../../assets/innovacionImagen3.jpg') !important;
+     }
+     .innovacion4Mobile{
+        background-image: url('./../../assets/innovacionImagen4.jpg') !important;
+     }
+     .innovacion5Mobile{
+        background-image: url('./../../assets/innovacionImagen5.jpg') !important;
+     }
+    }

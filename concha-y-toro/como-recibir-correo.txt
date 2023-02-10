@@ -1,0 +1,59 @@
+Este archivo corresponde a la documentacion para que actives tu correo y puedas recibir los emails
+
+Libreria usada EMAILJS // podes recibir emails ilimitados gratuitamente
+
+
+1) REGISTRARSE en la plataforma https://www.emailjs.com/ con el email que deseas recibir los contactos
+2)Dentro de la plataforma y ya logeado. CREAR SERVICIO de email/gmail 
+  Datos para el servicio: Nombre: Puedes escribir el que desees 
+                          Servicio ID: viene por default. Este ID lo usaremos mas adelante. Se puede consultar el mismo las veces que desees
+                          Connect Account: AQUI VA EL CORREO DONDE DESEAS RECIBIR LOS EMAILS, notar que podrias poner otra cuenta distanta a la del login, se recomienda por practicidad que sean la misma
+                          Marca enviar correo de configuracion(esto verifica si se establecio bien la conexion)
+                          En casa de no recibir el mail de configuracion, repetir los pasos con paciencia, dandole tiempo de carga para que se haga bien la configuracion 
+                          Una vez recibido el mail de verificacion la conexion esta establecida, y va a funcionar todo correctamente. Caso futuro de no funcionar correos, por alguna excepcion, volver  aqui para comprobar la conexion. Al tener bien la conexion lo demas funcionara correctamente 
+3) CREAR UN EMAIL/TEMPLEATE, dentro del menu de la plataforma abajo de email servicis ingresar a email templeta para crear uno 
+  Subject=> elegir a gusto 
+  Content=> podes escribirlo a gusto, es el correo que te llegara, guiarse con esta plantilla 
+  
+  Hola,
+  Has recibido un mensaje de {{user_name}}:
+    {{user_message}}
+  Se envio desde su email: {{user_email}}
+  Saludos   
+
+  Se puede modificar todo, menos lo que esta entre llaves(Puedes moverlo de lugar pero no modificarlo) 
+ user_name=> corresponde al campo de nombre en el formulario que completara algun usuario de la web
+ user_message=> corresponde al campo de mensajes en el formulario que completara algun usuario de la web     
+ user_email=> corresponde al campo de email del usuario que completo el formulario  
+
+ En la plataforma, en la seccion de templeates podras ver el que has creado. El mismo contiene un templeateId necesitaras el mismo
+
+ 4) Coleccionar la informacion necesaria 3 datos
+   1- Del paso dos obtener el codigo de servicio-id     
+   2- Del paso tres obtener el codigo de templeate-id 
+   3- Obtener la llave publica(public key), en la plataforma,menu, ir a seccion cuenta y obtener el codigo de llave publica
+5) Ingresar los codigos 
+   Se especificara donde pegar los codigos dentro del proyecto. 
+   3 Forms 
+
+   1)- Ir al archivo Contacto.tsx. navegacion carpetas src=>views=>contacto=>Contacto.tsx 
+       La linea a modificar corresponde a la linea de codigo 29
+       original -emailjs.sendForm('service_io7f0e2','template_kp3jbv3',e.currentTarget,'JkE3gZq4tbRszaYME')
+       reemplazar service_io7f0e2 por tu codigo de servicio
+       reemplazar template_kp3jbv3 por tu codigo del templeate
+       reemplazar JkE3gZq4tbRszaYME por tu codigo de llave publica 
+       nuevo -emailjs.sendForm('tuServicioId','tuTempleateId',e.currentTarget,'tuLlavePublica')
+
+       Listo, todo lo demas queda igual. Guardar el archivo. 
+       SOLO TOCAR ESOS 3 DATOS
+   2)- Ir al archivo Sumate.tsx. navegacion carpetas src=>views=>contacto=>Sumate.tsx 
+       Seguir los mismos pasos de 1, la linea a modificar es la 29 y solo modificar los 3 datos 
+   3)- Ir al archivo Unite.tsx. navegacion carpetas src=>views=>contacto=>Unite.tsx 
+       Seguir los mismos pasos de 1, la linea a modificar es la 29 y solo modificar los 3 datos
+
+
+LISTO        Guardar el archivo con las modificaciones y hacer el deploy de la web 
+
+Es muy sencillo, puedes buscar info sobre emailjs en algun tutorial en caso de mas explicacion.
+La clave es crear servicio+templeate, obtener los 3 codigos y pegarlos en el lugar indicado  
+

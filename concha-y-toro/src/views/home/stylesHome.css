@@ -1,0 +1,30 @@
+
+.prueba1{
+   background-image: url('./../../assets/home2.jpg');
+   background-attachment: scroll;
+}
+
+.prueba2{
+   background-image: url('./../../assets/home3.jpg');
+}
+.prueba3{
+   background-image: url('./../../assets/home4.jpg');
+}
+.prueba4{
+   background-image: url('./../../assets/home5.jpg');
+}
+
+.imgMob1{
+   background-image: url('./../../assets/home2.jpg');
+   background-attachment: scroll;
+}
+
+.imgMob2{
+   background-image: url('./../../assets/home3.jpg');
+}
+.imgMob3{
+   background-image: url('./../../assets/home4.jpg');
+}
+.imgMob4{
+   background-image: url('./../../assets/home5.jpg');
+}

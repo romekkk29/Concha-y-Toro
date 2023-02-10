@@ -1,0 +1,12 @@
+Los textos podran ser editados facilmente desde el archivo JSON, entrar src=>lang 
+Hay dos archivos 
+en-US.json=> para texto en ingles 
+es-AR.json=> para texto en español 
+
+No tocar el primer atributo de la linea ya que es necesario para indicar donde va el texto. Luego del doble punto, el texto entre comillas se puede editar a gusto 
+No eliminar lineas, se puede dejar vacias(""), pero no eliminarla
+
+El archivo en ingles, tambien esta en español, en caso de traducir todos los textos,  se puede poner la opcion en ingles 
+Hay que activar el boton en componentes=>menuMobile=>MenuMobile.tsx 
+Linea 213 a 218 esta comentada, hay que quitar los asterisco para activar la linea, esto activa el boton de cambiar idioma
+

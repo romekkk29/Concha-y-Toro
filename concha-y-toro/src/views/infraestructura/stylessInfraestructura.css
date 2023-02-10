@@ -1,0 +1,114 @@
+.tituloInfraee{
+    font-weight: 500;
+    font-size: 24px;
+    color: #B9B9B9;
+    text-align: center;
+    padding: 40px 10%;
+}
+.inno1{
+    background-image: url('./../../assets/infra1.png');
+    background-attachment: scroll;
+    position: relative;
+ }
+ 
+ .inno2{
+    background-image: url('./../../assets/infra2.png');
+    position: relative;
+
+ }
+ .inno3{
+    background-image: url('./../../assets/infra3.png');
+    position: relative;
+
+
+ }
+ .inno4{
+    background-image: url('./../../assets/infra4.png');
+    position: relative;
+
+ }
+
+
+
+.containMenuDrawerTextInfra{
+    margin:0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 12% !important;
+}
+.containMenuDrawerTextInfra h3{
+    color: #000000;
+    margin-bottom: 15px;
+    font-size: 32px;
+
+}
+.containMenuDrawerTextInfra p{
+    color: rgba(137, 137, 137, 1);
+    margin-bottom: 15px;
+    font-size: 22px;
+
+}
+.containMenuDrawerTextInfra .mobiProg{
+    margin-top:120px !important ;
+}
+.inno1Mobile{
+    display: none;
+ }
+@media all and (max-width:950px){
+    .tituloInfraee{
+        font-size: 18px;
+    }
+    .tituloInicioPrograma{
+        font-size: 30px;
+    }        
+
+}
+@media all and (max-width:900px){
+    .containMenuDrawerTextInfra p{
+        font-size: 13px;
+        margin-bottom: 7px;
+
+    }
+    .containMenuDrawerTextInfra h3{
+        font-size: 20px;
+        margin-bottom: 10px;
+
+    }
+    .headerDrawer22{
+        height: 30px;
+    }
+    .containMenuDrawerText{
+        padding: 0px 9% !important;
+    }
+    .containMenuDrawerTextInfra .mobiProg{
+        margin-top: 5px !important;
+        height: 25px;
+        width: 100px;
+    }
+    .containMenuDrawerTextInfra .mobiProg span{
+        font-size: 12px !important;
+    }
+    .inno1Mobile{
+        background-image: url('./../../assets/infra1.png');
+        background-attachment: scroll;
+        position: relative;
+        width: 100vw;
+        background-size: cover;
+        margin-bottom: 50px;
+        display: block;
+     }
+     .inno2Mobile{
+        background-image: url('./../../assets/infra2.png') !important;
+     }
+     .inno3Mobile{
+        background-image: url('./../../assets/infra3.png') !important;
+     }
+     .inno4Mobile{
+        background-image: url('./../../assets/infra4.png') !important;
+     }
+     
+}
+
